@@ -6,14 +6,14 @@ Queries the ImportYeti API and saves results to a JSON file
 that Claude (Cowork mode) can read directly.
 
 Usage:
-  python iy_query.py search-company "Impact LED"
-  python iy_query.py get-company "impact-led"
-  python iy_query.py get-company-bols "impact-led"
+  python iy_query.py search-company "Company Q"
+  python iy_query.py get-company "company-q"
+  python iy_query.py get-company-bols "company-q"
   python iy_query.py search-supplier "Shenzhen"
-  python iy_query.py get-supplier "shenzhen-impact-led"
-  python iy_query.py search-product-suppliers "LED modules"
-  python iy_query.py search-product-companies "LED modules"
-  python iy_query.py powerquery-bols --product "LED modules" --country "China" --start 01/01/2024
+  python iy_query.py get-supplier "shenzhen-company-q"
+  python iy_query.py search-product-suppliers "SMD cobrahead"
+  python iy_query.py search-product-companies "SMD cobrahead"
+  python iy_query.py powerquery-bols --product "SMD cobrahead" --country "China" --start 01/01/2024
   python iy_query.py db-updated
 
 Results are saved to: iy_result.json (same folder as this script)
