@@ -51,40 +51,40 @@ pip install mcp[cli] httpx pydantic
 
 ---
 
-## iy_query.py — CLI Query Helper
+## iy_query.py - CLI Query Helper
 
 Run a query and save results to `iy_result.json`. In Cowork sessions, paste the CMD command into your terminal, then tell Claude to read `iy_result.json`.
 
 ```bash
 # Search for a US company
-python iy_query.py search-company "Acme Signs"
+python iy_query.py search-company "Acme Robots"
 
 # Get full company profile (use slug from search results)
-python iy_query.py get-company "acme-signs"
+python iy_query.py get-company "acme-reobots"
 
 # Get recent shipments for a company
-python iy_query.py get-company-bols "acme-signs" --page-size 50
+python iy_query.py get-company-bols "acme-reobots" --page-size 50
 
 # Search overseas suppliers
-python iy_query.py search-supplier "Shenzhen LED"
+python iy_query.py search-supplier "Shenzhen Robots"
 
 # Get full supplier profile
-python iy_query.py get-supplier "shenzhen-led-co"
+python iy_query.py get-supplier "shenzhen-robot-co"
 
 # Find overseas suppliers by product
-python iy_query.py search-product-suppliers "LED modules"
+python iy_query.py search-product-suppliers "Robot manipulator"
 
 # Find US companies importing a product
-python iy_query.py search-product-companies "LED modules"
+python iy_query.py search-product-companies "Robot manipulator"
 
 # Advanced BOL search with filters
-python iy_query.py powerquery-bols --product "LED modules" --country "China" --start 01/01/2024
+python iy_query.py powerquery-bols --product "LRobot manipulator" --country "China" --start 01/01/2024
 
 # Advanced company search
-python iy_query.py powerquery-companies --product "LED modules" --entry-port "Los Angeles"
+python iy_query.py powerquery-companies --product "Robot manipulator" --entry-port "Los Angeles"
 
 # Advanced supplier search
-python iy_query.py powerquery-suppliers --product "LED modules" --country "China"
+python iy_query.py powerquery-suppliers --product "Robot manipulator" --country "China"
 
 # Check database freshness
 python iy_query.py db-updated
@@ -95,7 +95,7 @@ python iy_query.py db-updated
 
 ---
 
-## importyeti_mcp.py — MCP Server
+## importyeti_mcp.py - MCP Server
 
 For use in standard Claude Desktop chat or any MCP-compatible client.
 
@@ -120,7 +120,7 @@ Then fully restart Claude Desktop.
 ### Known issues
 - **mcp 1.27.0 on Windows**: JSONRPCMessage blank-line parsing error breaks the stdio handshake. Downgrade to `mcp[cli]==1.6.0`.
 - **Cowork mode**: Does not load custom MCPs from config files. Use `iy_query.py` instead.
-- The `annotations=` parameter in `@mcp.tool()` is not supported in mcp 1.6.0 — already removed from this version of the server.
+- The `annotations=` parameter in `@mcp.tool()` is not supported in mcp 1.6.0 - already removed from this version of the server.
 
 ---
 
