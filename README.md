@@ -1,6 +1,6 @@
 # ImportYeti Tools for Claude
 
-Two tools for querying the [ImportYeti](https://www.importyeti.com) US import data API — a FastMCP server and a lightweight CLI query helper.
+Two tools for querying the [ImportYeti](https://www.importyeti.com) US import data API - a FastMCP server and a lightweight CLI query helper.
 
 ## Background
 
