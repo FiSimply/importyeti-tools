@@ -4,7 +4,7 @@ Two tools for querying the [ImportYeti](https://www.importyeti.com) US import da
 
 ## Background
 
-This started as an attempt to build a custom MCP server for use inside Claude's Cowork mode. The MCP server works correctly when run standalone, but Cowork mode uses its own isolated connector system and doesn't load custom MCPs from `claude_desktop_config.json` or `~/.claude/settings.json`.
+This started as an attempt to build a custom MCP server for use inside Claude's Cowork mode. The MCP server works correctly when run standalone, but Cowork mode uses its own isolated connector system and doesn't load custom MCPs from `claude_desktop_config.json` or `~/.claude/settings.json`. There may be elements to salvage, so I'm sharing this and may revisit to figure a workaround.
 
 The solution: a simple Python script (`iy_query.py`) that hits the ImportYeti API directly, writes results to a JSON file, and lets Claude read it. Less elegant, completely reliable.
 
