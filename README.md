@@ -14,7 +14,7 @@ The solution: a simple Python script (`iy_query.py`) that hits the ImportYeti AP
 
 | File | Purpose |
 |------|---------|
-| `importyeti_mcp.py` | FastMCP server — 13 tools covering companies, suppliers, BOLs, and PowerQuery. Works in standard Claude Desktop chat if custom MCPs are supported in your setup. |
+| `importyeti_mcp.py` | FastMCP server - 13 tools covering companies, suppliers, BOLs, and PowerQuery. Works in standard Claude Desktop chat if custom MCPs are supported in your setup. |
 | `iy_query.py` | CLI query helper. Runs a query and saves results to `iy_result.json` for Claude to read. The reliable path for Cowork mode. |
 | `run_setup.ps1` | PowerShell script that patches `claude_desktop_config.json` to register the MCP server. Windows only. |
 
@@ -99,7 +99,7 @@ python iy_query.py db-updated
 
 For use in standard Claude Desktop chat or any MCP-compatible client.
 
-**Register with Claude Desktop** — run `run_setup.ps1` (Windows) or manually add to `claude_desktop_config.json`:
+**Register with Claude Desktop** - run `run_setup.ps1` (Windows) or manually add to `claude_desktop_config.json`:
 
 ```json
 {
