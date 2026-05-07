@@ -1,0 +1,17 @@
+# Environment / secrets
+.env
+
+# Query output (contains live API data, not for version control)
+iy_result.json
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Claude Desktop config backups
+*.backup_*.json
+
+# OS files
+.DS_Store
+Thumbs.db
